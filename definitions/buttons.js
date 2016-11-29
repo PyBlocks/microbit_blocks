@@ -19,8 +19,8 @@
   ],
   "output": "Boolean",
   "colour": 10,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True if the specified button is pressed. Otherwise, return False.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed"
 },
 {
   "type": "button_was_pressed",
@@ -43,8 +43,8 @@
   ],
   "output": "Boolean",
   "colour": 10,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True if the specified button was pressed since the device started or the last time this was checked.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed"
 },
 {
   "type": "button_get_presses",
@@ -67,6 +67,6 @@
   ],
   "output": "Number",
   "colour": 10,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return the running total of presses for the specified button, and resets this total to zero.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.get_presses"
 }]

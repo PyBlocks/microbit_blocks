@@ -16,8 +16,8 @@
   "inputsInline": true,
   "output": "Number",
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Get the brightness of the LED at column X and row Y as a number between 0 (off) and 9 (brightest).",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.get_pixel"
 },
 {
   "type": "display_set_pixel",
@@ -43,8 +43,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Set the brightness of the LED at column X and row Y to a value which has to be a number between 0 (off) and 9 (brightest).",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel"
 },
 {
   "type": "display_clear",
@@ -52,8 +52,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Clear the display - set the brightness of all LEDs to 0 (off).",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.clear"
 },
 {
   "type": "display_show_image",
@@ -68,8 +68,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Show the referenced image on the display.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show"
 },
 {
   "type": "display_show_animation",
@@ -114,8 +114,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Display the list of images as an animation with a certain delay between each frame. Indicate if you need to wait before continuing, continuously loop the animation and clear the display when finished.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show"
 },
 {
   "type": "display_scroll",
@@ -130,8 +130,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Scroll the referenced text across the display.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll"
 },
 {
   "type": "display_on",
@@ -139,8 +139,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Turns on the display.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.on"
 },
 {
   "type": "display_off",
@@ -148,14 +148,14 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Turn off the display.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.off"
 },
 {
   "type": "display_is_on",
   "message0": "Display is on?",
   "output": "Boolean",
   "colour": 0,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True if the display is on, otherwise return False.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.is_on"
 }]

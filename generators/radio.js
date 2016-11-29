@@ -14,7 +14,7 @@ Blockly.Python['radio_config'] = function(block) {
   var number_length = block.getFieldValue('length');
   var number_queue = block.getFieldValue('queue');
   var number_channel = block.getFieldValue('channel');
-  var number_name = block.getFieldValue('NAME');
+  var number_power = block.getFieldValue('power');
   var dropdown_data_rate = block.getFieldValue('data_rate');
   // TODO: Assemble Python into code variable.
   var code = '...\n';

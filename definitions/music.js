@@ -112,8 +112,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Play one of the built-in melodies. Indicate if you need to wait before continuing or continuously loop the melody.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#built-in-melodies"
 },
 {
   "type": "music_pitch",
@@ -139,8 +139,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Play a pitch at a certain number of cycles per second for a specified number of milliseconds.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.pitch"
 },
 {
   "type": "music_play_list_of_notes",
@@ -168,8 +168,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Play a list of notes expressed in the special music language. Indicate if you need to wait before continuing or continuously loop the melody.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#musical-notation"
 },
 {
   "type": "music_reset",
@@ -177,8 +177,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Reset all music related settings (current tempo, octave and duration) to default values.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.reset"
 },
 {
   "type": "music_stop",
@@ -186,8 +186,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Stop all music playback.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.stop"
 },
 {
   "type": "music_set_tempo",
@@ -208,14 +208,14 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Set the speed (tempo) of playback. A certain number of ticks represents a beat. Each beat is to be played a certain number of times a minute (beats per minute or BPM).",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.set_tempo"
 },
 {
   "type": "music_get_tempo",
   "message0": "Get current tempo",
   "output": "Array",
   "colour": 95,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Gets current tempo information as two numbers: number of ticks per beat, and number of beats per minute (BPM).",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.get_tempo"
 }]

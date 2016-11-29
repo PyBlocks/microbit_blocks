@@ -23,8 +23,8 @@
   ],
   "output": "Boolean",
   "colour": 120,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True if the referenced pin is touched.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitTouchPin.is_touched"
 },
 {
   "type": "pin_read_analog",
@@ -63,8 +63,8 @@
   ],
   "output": "Number",
   "colour": 120,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Read analog value from the referenced pin.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitAnalogDigitalPin.read_analog"
 },
 {
   "type": "pin_write_analog",
@@ -109,8 +109,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Write analog value to the referenced pin.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitAnalogDigitalPin.write_analog"
 },
 {
   "type": "pin_read_digital",
@@ -201,8 +201,8 @@
   ],
   "output": "Boolean",
   "colour": 120,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Read digital value (True or False) from the referenced pin.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitDigitalPin.read_digital"
 },
 {
   "type": "pin_write_digital",
@@ -299,6 +299,6 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 120,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Write digital value (True or False) to the referenced pin.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitDigitalPin.write_digital"
 }]

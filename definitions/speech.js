@@ -11,8 +11,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Attempt to say English input.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/speech.html#speech.say"
 },
 {
   "type": "speech_pronounce",
@@ -27,8 +27,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Precisely pronounce phoneme input.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/speech.html#phonemes"
 },
 {
   "type": "speech_sing",
@@ -43,6 +43,6 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 65,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Sing phonemes like a ROBOT.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/speech.html#singing"
 }]

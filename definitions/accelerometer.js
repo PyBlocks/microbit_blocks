@@ -3,24 +3,24 @@
   "message0": "Accelerometer X axis",
   "output": "Number",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Get the acceleration measurement in the X axis.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_x"
 },
 {
   "type": "accelerometer_get_y",
   "message0": "Accelerometer Y axis",
   "output": "Number",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Get the acceleration measurement in the Y axis.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_y"
 },
 {
   "type": "accelerometer_get_z",
   "message0": "Accelerometer Z axis",
   "output": "Number",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Get the acceleration measurement in the Z axis.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_z"
 },
 {
   "type": "accelerometer_was_gesture",
@@ -79,8 +79,8 @@
   ],
   "output": "Boolean",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True or False to indicate if the named gesture was active since the last check.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.was_gesture"
 },
 {
   "type": "accelerometer_is_gesture",
@@ -139,22 +139,22 @@
   ],
   "output": "Boolean",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return True or False to indicate if the named gesture is currently active.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.is_gesture"
 },
 {
   "type": "accelerometer_get_gestures",
   "message0": "Get gestures",
   "output": "Array",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return the gesture history. The most recent gesture is last. Also clears the gesture history.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_gestures"
 },
 {
   "type": "accelerometer_current_gesture",
   "message0": "Curent gesture",
   "output": "String",
   "colour": 20,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Return the name of the current gesture.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.current_gesture"
 }]

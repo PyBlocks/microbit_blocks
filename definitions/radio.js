@@ -4,8 +4,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Turn on the radio. This needs to be explicitly called since the radio draws power and takes up memory that you may otherwise need.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.on"
 },
 {
   "type": "radio_off",
@@ -13,8 +13,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Turn off the radio, thus saving power and memory.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.off"
 },
 {
   "type": "radio_config",
@@ -52,7 +52,7 @@
     },
     {
       "type": "field_number",
-      "name": "NAME",
+      "name": "power",
       "value": 0,
       "min": 0,
       "max": 7
@@ -82,8 +82,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Configure the radio. The length defines how long an individual message can be. The queue specifies the number of messages that can be stored on the incoming message queue. The channel defines the frequency to which the radio is tuned. The power specifies the strength of the broadcast signal. The data rate indicates the speed at which data is transferred.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.config"
 },
 {
   "type": "radio_reset",
@@ -91,8 +91,8 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Reset the radio to default settings.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.reset"
 },
 {
   "type": "radio_send_string",
@@ -107,14 +107,14 @@
   "previousStatement": null,
   "nextStatement": null,
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Broadcast a text message.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.send"
 },
 {
   "type": "radio_receive",
   "message0": "Receive message",
   "output": "String",
   "colour": 330,
-  "tooltip": "",
-  "helpUrl": "http://www.example.com/"
+  "tooltip": "Receive a message.",
+  "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.receive"
 }]
