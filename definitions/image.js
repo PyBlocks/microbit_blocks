@@ -100,7 +100,7 @@
         ],
         [
           "CLOCK3",
-          "CLOCK3
+          "CLOCK3"
         ],
         [
           "CLOCK2",
@@ -270,7 +270,7 @@
     }
   ],
   "output": "microbit_image",
-  "colour": 210,
+  "colour": 300,
   "tooltip": "Specify one of the built-in images.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes"
 },
@@ -285,7 +285,7 @@
     }
   ],
   "output": "microbit_image",
-  "colour": 210,
+  "colour": 300,
   "tooltip": "Create an exact copy of the referenced image.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image.copy"
 },
@@ -300,7 +300,7 @@
     }
   ],
   "output": "microbit_image",
-  "colour": 210,
+  "colour": 300,
   "tooltip": "Create a new image by inverting the brightness of the pixels in the referenced image.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image.invert"
 },
@@ -450,7 +450,7 @@
     }
   ],
   "output": "microbit_image",
-  "colour": 210,
+  "colour": 300,
   "tooltip": "Create a new image.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image"
 }]
