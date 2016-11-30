@@ -16,7 +16,10 @@ goog.provide('Blockly.Blocks.colour');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.constants');
 
+Blockly.FieldColour.COLOURS = ['#000', '#400', '#600', '#800', '#a00', '#b00',
+                               '#c00', '#d00', '#e00', '#f00'];
 
+Blockly.FieldColour.COLUMNS = 5;
 """
 
 DEFINITION = Template("""Blockly.Blocks['$name'] = {
