@@ -1,5 +1,5 @@
 <xml id="blockly-toolbox" style="display: none">
-  <category name="Accelerometer" colour="20">
+  <category name="Accelerometer" colour="0">
     <block type="microbit_accelerometer_get_x"></block>
     <block type="microbit_accelerometer_get_y"></block>
     <block type="microbit_accelerometer_get_z"></block>
@@ -8,18 +8,18 @@
     <block type="microbit_accelerometer_get_gestures"></block>
     <block type="microbit_accelerometer_current_gesture"></block>
   </category>
-  <category name="Buttons" colour="10">
+  <category name="Buttons" colour="32">
     <block type="microbit_button_is_pressed"></block>
     <block type="microbit_button_was_pressed"></block>
     <block type="microbit_button_get_presses"></block>
   </category>
-  <category name="Compass" colour="340">
+  <category name="Compass" colour="64">
     <block type="microbit_compass_calibrate"></block>
     <block type="microbit_compass_is_calibrated"></block>
     <block type="microbit_compass_heading"></block>
     <block type="microbit_compass_get_field_strength"></block>
   </category>
-  <category name="Display" colour="0">
+  <category name="Display" colour="96">
     <block type="microbit_display_get_pixel"></block>
     <block type="microbit_display_set_pixel"></block>
     <block type="microbit_display_clear"></block>
@@ -30,20 +30,20 @@
     <block type="microbit_display_off"></block>
     <block type="microbit_display_is_on"></block>
   </category>
-  <category name="Image" colour="300">
+  <category name="Image" colour="128">
     <block type="microbit_image_builtins"></block>
     <block type="microbit_image_copy"></block>
     <block type="microbit_image_invert"></block>
     <block type="microbit_image_create"></block>
   </category>
-  <category name="Microbit" colour="210">
+  <category name="Microbit" colour="160">
     <block type="microbit_microbit_panic"></block>
     <block type="microbit_microbit_reset"></block>
     <block type="microbit_microbit_sleep"></block>
     <block type="microbit_microbit_running_time"></block>
     <block type="microbit_microbit_temperature"></block>
   </category>
-  <category name="Music" colour="95">
+  <category name="Music" colour="192">
     <block type="microbit_music_play_built_in"></block>
     <block type="microbit_music_pitch"></block>
     <block type="microbit_music_play_list_of_notes"></block>
@@ -52,20 +52,20 @@
     <block type="microbit_music_set_tempo"></block>
     <block type="microbit_music_get_tempo"></block>
   </category>
-  <category name="Neopixel" colour="260">
+  <category name="Neopixel" colour="224">
     <block type="microbit_neopixel_initialise"></block>
     <block type="microbit_neopixel_clear"></block>
     <block type="microbit_neopixel_show"></block>
     <block type="microbit_neopixel_set"></block>
   </category>
-  <category name="Pins" colour="120">
+  <category name="Pins" colour="256">
     <block type="microbit_pin_touched"></block>
     <block type="microbit_pin_read_analog"></block>
     <block type="microbit_pin_write_analog"></block>
     <block type="microbit_pin_read_digital"></block>
     <block type="microbit_pin_write_digital"></block>
   </category>
-  <category name="Radio" colour="330">
+  <category name="Radio" colour="288">
     <block type="microbit_radio_on"></block>
     <block type="microbit_radio_off"></block>
     <block type="microbit_radio_config"></block>
@@ -73,7 +73,7 @@
     <block type="microbit_radio_send_string"></block>
     <block type="microbit_radio_receive"></block>
   </category>
-  <category name="Speech" colour="65">
+  <category name="Speech" colour="320">
     <block type="microbit_speech_say"></block>
     <block type="microbit_speech_pronounce"></block>
     <block type="microbit_speech_sing"></block>
