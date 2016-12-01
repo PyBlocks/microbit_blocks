@@ -1,16 +1,7 @@
 [{
   "type": "microbit_neopixel_initialise",
-  "message0": "Initialise %1 neopixel[s] %2 on pin %3",
+  "message0": "Initialise pin %1 with %2 %3 neopixel[s]",
   "args0": [
-    {
-      "type": "field_number",
-      "name": "n",
-      "value": 0,
-      "min": 1
-    },
-    {
-      "type": "input_dummy"
-    },
     {
       "type": "field_dropdown",
       "name": "pin",
@@ -28,6 +19,15 @@
           "2"
         ]
       ]
+    },
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "field_number",
+      "name": "n",
+      "value": 1,
+      "min": 1
     }
   ],
   "output": "neopixel_object",
