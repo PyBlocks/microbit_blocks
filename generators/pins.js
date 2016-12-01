@@ -29,7 +29,7 @@ Blockly.Python['microbit_pin_write_analog'] = function(block) {
   return code;
 };
 
-Blockly.Python['mmicrobit_pin_read_digital'] = function(block) {
+Blockly.Python['microbit_pin_read_digital'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
   var code = 'pin' + dropdown_pin + '.read_digital()';
