@@ -10,14 +10,14 @@ Blockly.Python.addReservedWords('microbit');
 Blockly.Python['microbit_pin_touched'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  var code = dropdown_pin + '.is_touched()';
+  var code = 'pin' + dropdown_pin + '.is_touched()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
 Blockly.Python['microbit_pin_read_analog'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  var code = dropdown_pin + '.read_analog()';
+  var code = 'pin' + dropdown_pin + '.read_analog()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
@@ -25,14 +25,14 @@ Blockly.Python['microbit_pin_write_analog'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var value_output = Blockly.Python.valueToCode(block, 'output', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  var code = dropdown_pin + '.write_analog(' + value_output + ')\n';
+  var code = 'pin' + dropdown_pin + '.write_analog(' + value_output + ')\n';
   return code;
 };
 
 Blockly.Python['mmicrobit_pin_read_digital'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  var code = dropdown_pin + '.read_digital()';
+  var code = 'pin' + dropdown_pin + '.read_digital()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
@@ -40,6 +40,6 @@ Blockly.Python['microbit_pin_write_digital'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var value_output = Blockly.Python.valueToCode(block, 'output', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  var code = dropdown_pin + '.write_digital(' + value_output + ')\n';
+  var code = 'pin' + dropdown_pin + '.write_digital(' + value_output + ')\n';
   return code;
 };
