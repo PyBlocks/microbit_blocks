@@ -28,7 +28,7 @@ Blockly.Python['microbit_image_invert'] = function(block) {
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['microit_image_create'] = function(block) {
+Blockly.Python['microbit_image_create'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var colour_00 = block.getFieldValue('00');
   var colour_01 = block.getFieldValue('01');
