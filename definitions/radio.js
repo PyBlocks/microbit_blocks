@@ -66,15 +66,15 @@
       "options": [
         [
           "1Mbit",
-          "1Mbit"
+          "RATE_1MBIT"
         ],
         [
           "250Kbit",
-          "250Kbit"
+          "RATE_250KBIT"
         ],
         [
           "2Mbit",
-          "2Mbit"
+          "RATE_2MBIT"
         ]
       ]
     }
