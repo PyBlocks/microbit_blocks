@@ -35,6 +35,6 @@ Blockly.Python['microbit_microbit_running_time'] = function(block) {
 
 Blockly.Python['microbit_microbit_temperature'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
-  var code = 'temperature';
+  var code = 'temperature()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };

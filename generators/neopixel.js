@@ -17,14 +17,14 @@ Blockly.Python['microbit_neopixel_initialise'] = function(block) {
 
 Blockly.Python['microbit_neopixel_clear'] = function(block) {
   Blockly.Python.definitions_['import_neopixel'] = 'import neopixel';
-  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_ATOMIC);
+  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_MEMBER);
   var code = value_neopixel_object + '.clear()\n';
   return code;
 };
 
 Blockly.Python['microbit_neopixel_show'] = function(block) {
   Blockly.Python.definitions_['import_neopixel'] = 'import neopixel';
-  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_ATOMIC);
+  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_MEMBER);
   var code = value_neopixel_object + '.show()\n';
   return code;
 };
@@ -35,7 +35,7 @@ Blockly.Python['microbit_neopixel_set'] = function(block) {
   var value_red = Blockly.Python.valueToCode(block, 'red', Blockly.Python.ORDER_ATOMIC);
   var value_green = Blockly.Python.valueToCode(block, 'green', Blockly.Python.ORDER_ATOMIC);
   var value_blue = Blockly.Python.valueToCode(block, 'blue', Blockly.Python.ORDER_ATOMIC);
-  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_ATOMIC);
+  var value_neopixel_object = Blockly.Python.valueToCode(block, 'neopixel_object', Blockly.Python.ORDER_MEMBER);
   var code = value_neopixel_object + '[' + value_pixel + '] = (' + value_red + ', ' + value_green + ', ' + value_blue + ')\n';
   return code;
 };

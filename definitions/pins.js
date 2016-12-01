@@ -211,7 +211,7 @@
     {
       "type": "input_value",
       "name": "output",
-      "check": "Boolean"
+      "check": "Number"
     },
     {
       "type": "field_dropdown",

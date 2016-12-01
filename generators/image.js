@@ -16,14 +16,14 @@ Blockly.Python['microbit_image_builtins'] = function(block) {
 
 Blockly.Python['microbit_image_copy'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
-  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_ATOMIC);
+  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_MEMBER);
   var code = value_image + '.copy()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
 Blockly.Python['microbit_image_invert'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
-  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_ATOMIC);
+  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_MEMBER);
   var code = value_image + '.invert()';
   return [code, Blockly.Python.ORDER_MEMBER];
 };
