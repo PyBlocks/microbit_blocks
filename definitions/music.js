@@ -191,7 +191,7 @@
 },
 {
   "type": "microbit_music_set_tempo",
-  "message0": "Set tempo with 1 beat the same as %1 ticks, at  %2 beats per minute",
+  "message0": "Set tempo: 1 beat is %1 ticks at %2 beats per minute",
   "args0": [
     {
       "type": "input_value",

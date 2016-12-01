@@ -47,7 +47,7 @@ Blockly.Python['microbit_music_set_tempo'] = function(block) {
   Blockly.Python.definitions_['import_music'] = 'import music';
   var value_ticks = Blockly.Python.valueToCode(block, 'ticks', Blockly.Python.ORDER_ATOMIC);
   var value_bpm = Blockly.Python.valueToCode(block, 'bpm', Blockly.Python.ORDER_ATOMIC);
-  var code = 'music.set_tempo(' + numbsr_ticks + ', ' + number_bpm +')\n';
+  var code = 'music.set_tempo(' + value_ticks + ', ' + value_bpm +')\n';
   return code;
 };
 
