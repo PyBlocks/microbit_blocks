@@ -97,7 +97,7 @@
       "check": "Number"
     }
   ],
-  "inputsInline": true,
+  "inputsInline": false,
   "previousStatement": null,
   "nextStatement": null,
   "colour": 260,
