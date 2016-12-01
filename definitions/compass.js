@@ -1,5 +1,5 @@
 [{
-  "type": "compass_calibrate",
+  "type": "microbit_compass_calibrate",
   "message0": "Calibrate compass",
   "previousStatement": null,
   "nextStatement": null,
@@ -8,7 +8,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/compass.html#microbit.compass.calibrate"
 },
 {
-  "type": "compass_is_calibrated",
+  "type": "microbit_compass_is_calibrated",
   "message0": "Compass is calibrated?",
   "output": "Boolean",
   "colour": 340,
@@ -16,7 +16,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/compass.html#microbit.compass.is_calibrated"
 },
 {
-  "type": "compass_heading",
+  "type": "microbit_compass_heading",
   "message0": "Compass heading",
   "output": "Number",
   "colour": 340,
@@ -24,7 +24,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/compass.html#microbit.compass.heading"
 },
 {
-  "type": "compass_get_field_strength",
+  "type": "microbit_compass_get_field_strength",
   "message0": "Compass field strength",
   "output": "Number",
   "colour": 340,

@@ -23,6 +23,6 @@ Blockly.Python['microbit_speech_pronounce'] = function(block) {
 Blockly.Python['microbit_speech_sing'] = function(block) {
   Blockly.Python.definitions_['import_speech'] = 'import speech';
   var value_song = Blockly.Python.valueToCode(block, 'song', Blockly.Python.ORDER_ATOMIC);
-  var code = 'speech.pronounce(' + value_song + ')\n';
+  var code = 'speech.sing(' + value_song + ')\n';
   return code;
 };

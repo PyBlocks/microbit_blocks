@@ -1,5 +1,5 @@
 [{
-  "type": "radio_on",
+  "type": "microbit_radio_on",
   "message0": "Switch on radio",
   "previousStatement": null,
   "nextStatement": null,
@@ -8,7 +8,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.on"
 },
 {
-  "type": "radio_off",
+  "type": "microbit_radio_off",
   "message0": "Switch off radio",
   "previousStatement": null,
   "nextStatement": null,
@@ -17,7 +17,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.off"
 },
 {
-  "type": "radio_config",
+  "type": "microbit_radio_config",
   "message0": "Configure radio message length %1 %2 maximum queue length %3 %4 tuned to channel %5 %6 broadcast power %7 %8 data rate %9",
   "args0": [
     {
@@ -86,7 +86,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.config"
 },
 {
-  "type": "radio_reset",
+  "type": "microbit_radio_reset",
   "message0": "Reset radio",
   "previousStatement": null,
   "nextStatement": null,
@@ -95,7 +95,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.reset"
 },
 {
-  "type": "radio_send_string",
+  "type": "microbit_radio_send_string",
   "message0": "Send message %1",
   "args0": [
     {
@@ -111,7 +111,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/radio.html#radio.send"
 },
 {
-  "type": "radio_receive",
+  "type": "microbit_radio_receive",
   "message0": "Receive message",
   "output": "String",
   "colour": 330,

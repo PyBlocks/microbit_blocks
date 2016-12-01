@@ -1,5 +1,5 @@
 [{
-  "type": "pin_touched",
+  "type": "microbit_pin_touched",
   "message0": "Pin %1 is touched?",
   "args0": [
     {
@@ -27,7 +27,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitTouchPin.is_touched"
 },
 {
-  "type": "pin_read_analog",
+  "type": "microbit_pin_read_analog",
   "message0": "Read analog on pin %1",
   "args0": [
     {
@@ -67,12 +67,12 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitAnalogDigitalPin.read_analog"
 },
 {
-  "type": "pin_write_analog",
+  "type": "microbit_pin_write_analog",
   "message0": "Write analog value %1 on pin %2",
   "args0": [
     {
       "type": "input_value",
-      "name": "NAME",
+      "name": "output",
       "check": "Number"
     },
     {
@@ -113,7 +113,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitAnalogDigitalPin.write_analog"
 },
 {
-  "type": "pin_read_digital",
+  "type": "microbit_pin_read_digital",
   "message0": "Read digital value on pin %1",
   "args0": [
     {
@@ -205,7 +205,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/pin.html#microbit.MicroBitDigitalPin.read_digital"
 },
 {
-  "type": "pin_write_digital",
+  "type": "microbit_pin_write_digital",
   "message0": "Write digital value %1 on pin %2",
   "args0": [
     {

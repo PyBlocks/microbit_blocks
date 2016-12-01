@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 """
 Build blocks and translations strings.
+
+It's a hack. Needs refactoring!
+
+Example usage:
+
+    $ ./build.py en es de
+
+Will generate new blocks in the "blocks" directory derived from the JSON
+definitions in the definitions directory. Translation strings for languages
+with the given language codes will be created in the "messages" directory.
+These will initially contain the English text defined in the original JSON.
 """
 import sys
 import json
@@ -55,6 +66,9 @@ goog.require('Blockly.Msg');
 
 
 def get_categories(path='definitions'):
+    """
+    Return data structures representing the various block definitions.
+    """
     files = sorted([f for f in listdir(path) if
              isfile(join(path, f)) and f.endswith('.js')])
     result = []
@@ -74,7 +88,7 @@ def get_code(definitions, colour):
     code = []
     for definition in definitions:
         new_def = copy.deepcopy(definition)
-        name = 'microbit_' + new_def['type']
+        name = new_def['type']
         del new_def['type']
         new_def['colour'] = colour
         code.append(DEFINITION.substitute(name=name,
@@ -97,7 +111,7 @@ def get_eggsmell(categories):
     for category in categories:
         rendered_defs = []
         for definition in category['definitions']:
-            name = 'microbit_' + definition['type']
+            name = definition['type']
             rendered_defs.append(EGGSMELL_BLOCK.substitute(name=name))
         rendered.append(EGGSMELL_CATEGORY.substitute(name=category['name'],
                                                      colour=category['colour'],
@@ -113,7 +127,7 @@ def generate_translation(definition):
     result = []
     fields = ['tooltip', 'helpUrl']
     template = "Blockly.Msg.{} = {};\n"
-    name = 'microbit_' + definition['type']
+    name = definition['type']
     for k in definition.keys():
         trans_name = '{}_{}'.format(name, k).upper()
         if k in fields:

@@ -1,5 +1,5 @@
 [{
-  "type": "music_play_built_in",
+  "type": "microbit_music_play_built_in",
   "message0": "Play built-in melody %1 %2 Wait %3 %4 Loop %5",
   "args0": [
     {
@@ -116,7 +116,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#built-in-melodies"
 },
 {
-  "type": "music_pitch",
+  "type": "microbit_music_pitch",
   "message0": "Play pitch %1 %2 for  %3 milliseconds",
   "args0": [
     {
@@ -143,7 +143,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.pitch"
 },
 {
-  "type": "music_play_list_of_notes",
+  "type": "microbit_music_play_list_of_notes",
   "message0": "Play notes %1 Wait %2 %3 Loop %4",
   "args0": [
     {
@@ -172,7 +172,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#musical-notation"
 },
 {
-  "type": "music_reset",
+  "type": "microbit_music_reset",
   "message0": "Reset music",
   "previousStatement": null,
   "nextStatement": null,
@@ -181,7 +181,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.reset"
 },
 {
-  "type": "music_stop",
+  "type": "microbit_music_stop",
   "message0": "Stop music",
   "previousStatement": null,
   "nextStatement": null,
@@ -190,7 +190,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.stop"
 },
 {
-  "type": "music_set_tempo",
+  "type": "microbit_music_set_tempo",
   "message0": "Set tempo with 1 beat the same as %1 ticks, at  %2 beats per minute",
   "args0": [
     {
@@ -212,7 +212,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/music.html#music.set_tempo"
 },
 {
-  "type": "music_get_tempo",
+  "type": "microbit_music_get_tempo",
   "message0": "Get current tempo",
   "output": "Array",
   "colour": 95,

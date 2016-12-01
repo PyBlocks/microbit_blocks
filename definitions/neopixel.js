@@ -1,5 +1,5 @@
 [{
-  "type": "neopixel_initialise",
+  "type": "microbit_neopixel_initialise",
   "message0": "Initialise %1 neopixel[s] %2 on pin %3",
   "args0": [
     {
@@ -36,7 +36,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/neopixel.html#neopixel.NeoPixel"
 },
 {
-  "type": "neopixel_clear",
+  "type": "microbit_neopixel_clear",
   "message0": "Clear neopixels on %1",
   "args0": [
     {
@@ -52,7 +52,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/neopixel.html#neopixel.NeoPixel.clear"
 },
 {
-  "type": "neopixel_show",
+  "type": "microbit_neopixel_show",
   "message0": "Show neopixels on %1",
   "args0": [
     {
@@ -68,7 +68,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/neopixel.html#neopixel.NeoPixel.show"
 },
 {
-  "type": "neopixel_set",
+  "type": "microbit_neopixel_set",
   "message0": "Using neopixels on %1 set pixel in position %2 with red %3 green %4 blue %5",
   "args0": [
     {

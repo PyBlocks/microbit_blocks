@@ -1,5 +1,5 @@
 [{
-  "type": "image_builtins",
+  "type": "microbit_image_builtins",
   "message0": "Built in image %1",
   "args0": [
     {
@@ -275,7 +275,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes"
 },
 {
-  "type": "image_copy",
+  "type": "microbit_image_copy",
   "message0": "Copy image %1",
   "args0": [
     {
@@ -290,7 +290,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image.copy"
 },
 {
-  "type": "image_invert",
+  "type": "microbit_image_invert",
   "message0": "Invert image %1",
   "args0": [
     {
@@ -305,7 +305,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#microbit.Image.invert"
 },
 {
-  "type": "image_create",
+  "type": "microbit_image_create",
   "message0": "Create image %1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29 %30",
   "args0": [
     {

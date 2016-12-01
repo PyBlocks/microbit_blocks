@@ -1,5 +1,5 @@
 [{
-  "type": "microbit_panic",
+  "type": "microbit_microbit_panic",
   "message0": "Panic with status code %1",
   "args0": [
     {
@@ -17,7 +17,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.panic"
 },
 {
-  "type": "microbit_reset",
+  "type": "microbit_microbit_reset",
   "message0": "Reset micro:bit",
   "previousStatement": null,
   "nextStatement": null,
@@ -26,7 +26,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.reset"
 },
 {
-  "type": "microbit_sleep",
+  "type": "microbit_microbit_sleep",
   "message0": "Sleep %1 milliseconds",
   "args0": [
     {
@@ -43,7 +43,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.sleep"
 },
 {
-  "type": "microbit_running_time",
+  "type": "microbit_microbit_running_time",
   "message0": "Running time",
   "output": "Number",
   "colour": 210,
@@ -51,7 +51,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.running_time"
 },
 {
-  "type": "microbit_temperature",
+  "type": "microbit_microbit_temperature",
   "message0": "Board temperature",
   "output": "Number",
   "colour": 210,

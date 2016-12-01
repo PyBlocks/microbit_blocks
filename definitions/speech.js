@@ -1,5 +1,5 @@
 [{
-  "type": "speech_say",
+  "type": "microbit_speech_say",
   "message0": "Say %1",
   "args0": [
     {
@@ -15,7 +15,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/speech.html#speech.say"
 },
 {
-  "type": "speech_pronounce",
+  "type": "microbit_speech_pronounce",
   "message0": "Pronounce %1",
   "args0": [
     {
@@ -31,7 +31,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/speech.html#phonemes"
 },
 {
-  "type": "speech_sing",
+  "type": "microbit_speech_sing",
   "message0": "Sing %1",
   "args0": [
     {

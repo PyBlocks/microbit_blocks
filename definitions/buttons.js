@@ -1,5 +1,5 @@
 [{
-  "type": "button_is_pressed",
+  "type": "microbit_button_is_pressed",
   "message0": "Button %1 is pressed",
   "args0": [
     {
@@ -23,7 +23,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.is_pressed"
 },
 {
-  "type": "button_was_pressed",
+  "type": "microbit_button_was_pressed",
   "message0": "Button %1 was pressed",
   "args0": [
     {
@@ -47,7 +47,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/button.html#Button.was_pressed"
 },
 {
-  "type": "button_get_presses",
+  "type": "microbit_button_get_presses",
   "message0": "Get number of presses for button %1",
   "args0": [
     {

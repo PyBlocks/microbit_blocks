@@ -1,42 +1,45 @@
-Blockly.Python['radio_on'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+'use strict';
+
+goog.provide('Blockly.Python.radio');
+goog.require('Blockly.Python');
+
+// Any imports need to be reserved words
+Blockly.Python.addReservedWords('radio');
+
+
+Blockly.Python['microbit_radio_on'] = function(block) {
+  Blockly.Python.definitions_['import_radio'] = 'import radio';
+  var code = 'radio.on()\n';
   return code;
 };
 
-Blockly.Python['radio_off'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+Blockly.Python['microbit_radio_off'] = function(block) {
+  var code = 'radio.off()\n';
   return code;
 };
 
-Blockly.Python['radio_config'] = function(block) {
+Blockly.Python['microbit_radio_config'] = function(block) {
   var number_length = block.getFieldValue('length');
   var number_queue = block.getFieldValue('queue');
   var number_channel = block.getFieldValue('channel');
   var number_power = block.getFieldValue('power');
   var dropdown_data_rate = block.getFieldValue('data_rate');
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+  var code = 'radio.config(length=' + number_length +', queue=' + number_queue + ', channel=' + number_channel + ', power=' + number_power + ', data_rate=radio.' + dropdown_data_rate + ')\n';
   return code;
 };
 
-Blockly.Python['radio_reset'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+Blockly.Python['microbit_radio_reset'] = function(block) {
+  var code = 'radio.reset()\n';
   return code;
 };
 
-Blockly.Python['radio_send_string'] = function(block) {
+Blockly.Python['microbit_radio_send_string'] = function(block) {
   var value_message = Blockly.Python.valueToCode(block, 'message', Blockly.Python.ORDER_ATOMIC);
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+  var code = 'radio.send(' + value_message + ')\n';
   return code;
 };
 
-Blockly.Python['radio_receive'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+Blockly.Python['microbit_radio_receive'] = function(block) {
+  var code = 'radio.receive()';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };

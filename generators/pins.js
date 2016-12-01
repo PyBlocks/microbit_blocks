@@ -1,39 +1,45 @@
-Blockly.Python['pin_touched'] = function(block) {
+'use strict';
+
+goog.provide('Blockly.Python.pins');
+goog.require('Blockly.Python');
+
+// Any imports need to be reserved words
+Blockly.Python.addReservedWords('microbit');
+
+
+Blockly.Python['microbit_pin_touched'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+  var code = dropdown_pin + '.is_touched()';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['pin_read_analog'] = function(block) {
+Blockly.Python['microbit_pin_read_analog'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+  var code = dropdown_pin + '.read_analog()';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['pin_write_analog'] = function(block) {
-  var value_name = Blockly.Python.valueToCode(block, 'NAME', Blockly.Python.ORDER_ATOMIC);
+Blockly.Python['microbit_pin_write_analog'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  var value_output = Blockly.Python.valueToCode(block, 'output', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+  var code = dropdown_pin + '.write_analog(' + value_output + ')\n';
   return code;
 };
 
-Blockly.Python['pin_read_digital'] = function(block) {
+Blockly.Python['mmicrobit_pin_read_digital'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_pin = block.getFieldValue('pin');
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+  var code = dropdown_pin + '.read_digital()';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['pin_write_digital'] = function(block) {
+Blockly.Python['microbit_pin_write_digital'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var value_output = Blockly.Python.valueToCode(block, 'output', Blockly.Python.ORDER_ATOMIC);
   var dropdown_pin = block.getFieldValue('pin');
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+  var code = dropdown_pin + '.write_digital(' + value_output + ')\n';
   return code;
 };

@@ -1,5 +1,5 @@
 [{
-  "type": "display_get_pixel",
+  "type": "microbit_display_get_pixel",
   "message0": "Get brightness at X %1 Y %2",
   "args0": [
     {
@@ -20,7 +20,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.get_pixel"
 },
 {
-  "type": "display_set_pixel",
+  "type": "microbit_display_set_pixel",
   "message0": "Set pixel at X %1 Y %2 to brightness %3",
   "args0": [
     {
@@ -47,7 +47,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.set_pixel"
 },
 {
-  "type": "display_clear",
+  "type": "microbit_display_clear",
   "message0": "Clear display",
   "previousStatement": null,
   "nextStatement": null,
@@ -56,7 +56,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.clear"
 },
 {
-  "type": "display_show_image",
+  "type": "microbit_display_show_image",
   "message0": "Show image %1",
   "args0": [
     {
@@ -72,7 +72,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show"
 },
 {
-  "type": "display_show_animation",
+  "type": "microbit_display_show_animation",
   "message0": "Animate images %1 with a delay of %2 milliseconds between frames. %3 Wait %4 %5 Loop %6 %7 Clear %8",
   "args0": [
     {
@@ -118,7 +118,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.show"
 },
 {
-  "type": "display_scroll",
+  "type": "microbit_display_scroll",
   "message0": "Scroll message %1",
   "args0": [
     {
@@ -134,7 +134,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.scroll"
 },
 {
-  "type": "display_on",
+  "type": "microbit_display_on",
   "message0": "Turn on display",
   "previousStatement": null,
   "nextStatement": null,
@@ -143,7 +143,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.on"
 },
 {
-  "type": "display_off",
+  "type": "microbit_display_off",
   "message0": "Turn off display",
   "previousStatement": null,
   "nextStatement": null,
@@ -152,7 +152,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.off"
 },
 {
-  "type": "display_is_on",
+  "type": "microbit_display_is_on",
   "message0": "Display is on?",
   "output": "Boolean",
   "colour": 0,

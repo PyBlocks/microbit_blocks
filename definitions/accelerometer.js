@@ -1,5 +1,5 @@
 [{
-  "type": "accelerometer_get_x",
+  "type": "microbit_accelerometer_get_x",
   "message0": "Accelerometer X axis",
   "output": "Number",
   "colour": 20,
@@ -7,7 +7,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_x"
 },
 {
-  "type": "accelerometer_get_y",
+  "type": "microbit_accelerometer_get_y",
   "message0": "Accelerometer Y axis",
   "output": "Number",
   "colour": 20,
@@ -15,7 +15,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_y"
 },
 {
-  "type": "accelerometer_get_z",
+  "type": "microbit_accelerometer_get_z",
   "message0": "Accelerometer Z axis",
   "output": "Number",
   "colour": 20,
@@ -23,7 +23,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_z"
 },
 {
-  "type": "accelerometer_was_gesture",
+  "type": "microbit_accelerometer_was_gesture",
   "message0": "Was gesture %1",
   "args0": [
     {
@@ -83,7 +83,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.was_gesture"
 },
 {
-  "type": "accelerometer_is_gesture",
+  "type": "microbit_accelerometer_is_gesture",
   "message0": "Is gesture %1",
   "args0": [
     {
@@ -143,7 +143,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.is_gesture"
 },
 {
-  "type": "accelerometer_get_gestures",
+  "type": "microbit_accelerometer_get_gestures",
   "message0": "Get gestures",
   "output": "Array",
   "colour": 20,
@@ -151,7 +151,7 @@
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/accelerometer.html#microbit.accelerometer.get_gestures"
 },
 {
-  "type": "accelerometer_current_gesture",
+  "type": "microbit_accelerometer_current_gesture",
   "message0": "Curent gesture",
   "output": "String",
   "colour": 20,

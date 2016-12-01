@@ -13,46 +13,40 @@ Blockly.Python['microbit_accelerometer_get_x'] = function(block) {
   return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_get_y'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+Blockly.Python['microbit_accelerometer_get_y'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  var code = 'accelerometer.get_y()'
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_get_z'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+Blockly.Python['microbit_accelerometer_get_z'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  var code = 'accelerometer.get_z()'
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_was_gesture'] = function(block) {
+Blockly.Python['microbit_accelerometer_was_gesture'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_gesture = block.getFieldValue('gesture');
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+  var code = 'accelerometer.was_gesture("' + dropdown_gesture + '")';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_is_gesture'] = function(block) {
+Blockly.Python['microbit_accelerometer_is_gesture'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
   var dropdown_gesture = block.getFieldValue('gesture');
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+  var code = 'accelerometer.is_gesture("' + dropdown_gesture + '")';
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_get_gestures'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+Blockly.Python['microbit_accelerometer_get_gestures'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  var code = 'accelerometer.get_gestures()'
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
 
-Blockly.Python['accelerometer_current_gesture'] = function(block) {
-  // TODO: Assemble Python into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.Python.ORDER_NONE];
+Blockly.Python['microbit_accelerometer_current_gesture'] = function(block) {
+  Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
+  var code = 'accelerometer.current_gestures()'
+  return [code, Blockly.Python.ORDER_MEMBER];
 };
