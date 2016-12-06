@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner v2.3.4 - Python Blocks Editor</title>
+  <link rel="shortcut icon" type="image/png" href="tests/lib/jasmine-2.3.4/jasmine_favicon.png">
+  <link rel="stylesheet" href="tests/lib/jasmine-2.3.4/jasmine.css">
+  <script src="tests/lib/jasmine-2.3.4/jasmine.js"></script>
+  <script src="tests/lib/jasmine-2.3.4/jasmine-html.js"></script>
+  <script src="tests/lib/jasmine-2.3.4/boot.js"></script>
+  <!-- include source files here... -->
+  <script type="application/javascript">
+    // Stub objects.
+    var Blockly = {
+      'Python': {
+        'definitions_': {},
+        'ORDER_MEMBER': 'ORDER_MEMBER',
+        'ORDER_ATOMIC': 'ORDER_ATOMIC',
+        'addReservedWords': function(){},
+        'valueToCode': function(){}
+      }
+    };
+    var goog = {
+        'provide': function(){},
+        'require': function(){}
+    };
+  </script>
+  <script src ="generators/accelerometer.js"
+      type="application/javascript"></script>
+  <script src ="generators/buttons.js"
+      type="application/javascript"></script>
+  <script src ="generators/compass.js"
+      type="application/javascript"></script>
+  <script src ="generators/display.js"
+      type="application/javascript"></script>
+  <script src ="generators/image.js"
+      type="application/javascript"></script>
+  <script src ="generators/microbit.js"
+      type="application/javascript"></script>
+  <script src ="generators/music.js"
+      type="application/javascript"></script>
+  <script src ="generators/neopixel.js"
+      type="application/javascript"></script>
+  <script src ="generators/pins.js"
+      type="application/javascript"></script>
+  <script src ="generators/python.js"
+      type="application/javascript"></script>
+  <script src ="generators/radio.js"
+      type="application/javascript"></script>
+  <script src ="generators/speech.js"
+      type="application/javascript"></script>
+</head>
+<body>
+    <div id="fooeditor"></div>
+    <!-- include spec files here... -->
+    <script src="tests/spec/python-spec.js"></script>
+</body>
+</html>
