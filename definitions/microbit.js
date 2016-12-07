@@ -11,7 +11,6 @@
     }
   ],
   "previousStatement": null,
-  "nextStatement": null,
   "colour": 210,
   "tooltip": "Enter panic mode to indicate something has gone wrong. Requires a restart. Pass in a number to indicate a status code.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.panic"
@@ -20,7 +19,6 @@
   "type": "microbit_microbit_reset",
   "message0": "Reset micro:bit",
   "previousStatement": null,
-  "nextStatement": null,
   "colour": 210,
   "tooltip": "Reset the micro:bit",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.reset"

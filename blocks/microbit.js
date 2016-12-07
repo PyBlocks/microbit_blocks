@@ -200,14 +200,14 @@ Blockly.Blocks['microbit_image_create'] = {
 
 Blockly.Blocks['microbit_microbit_panic'] = {
   init: function() {
-    this.jsonInit({"helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.panic", "args0": [{"type": "field_number", "max": 255, "min": 0, "value": 0, "name": "code"}], "previousStatement": null, "colour": 160, "message0": "Panic with status code %1", "nextStatement": null, "tooltip": "Enter panic mode to indicate something has gone wrong. Requires a restart. Pass in a number to indicate a status code."});
+    this.jsonInit({"colour": 160, "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.panic", "args0": [{"type": "field_number", "value": 0, "min": 0, "name": "code", "max": 255}], "previousStatement": null, "tooltip": "Enter panic mode to indicate something has gone wrong. Requires a restart. Pass in a number to indicate a status code.", "message0": "Panic with status code %1"});
   }
 };
 
 
 Blockly.Blocks['microbit_microbit_reset'] = {
   init: function() {
-    this.jsonInit({"helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.reset", "nextStatement": null, "previousStatement": null, "colour": 160, "message0": "Reset micro:bit", "tooltip": "Reset the micro:bit"});
+    this.jsonInit({"tooltip": "Reset the micro:bit", "message0": "Reset micro:bit", "previousStatement": null, "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/microbit.html#microbit.reset", "colour": 160});
   }
 };
 
