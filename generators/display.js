@@ -39,7 +39,7 @@ Blockly.Python['microbit_display_show_image'] = function(block) {
 
 Blockly.Python['microbit_display_show_animation'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
-  var value_images = Blockly.Python.valueToCode(block, 'images', Blockly.Python.ORDER_ATOMIC);
+  var value_images = Blockly.Python.valueToCode(block, 'images', Blockly.Python.ORDER_MEMBER);
   var number_delay = block.getFieldValue('delay');
   var checkbox_wait = block.getFieldValue('wait') == 'TRUE' ? 'True' : 'False';
   var checkbox_loop = block.getFieldValue('loop') == 'TRUE' ? 'True' : 'False';

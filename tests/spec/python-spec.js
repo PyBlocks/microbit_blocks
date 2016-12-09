@@ -217,7 +217,7 @@ describe("Blockly code generation for MicroPython on the BBC micro:bit:", functi
             var expected = 'display.show(Image.ALL_CLOCKS, delay=100, wait=True, loop=False, clear=False)\n';
             expect(result).toEqual(expected);
             expect(Blockly.Python.definitions_.import_microbit).toEqual(import_microbit);
-            expect(Blockly.Python.valueToCode).toHaveBeenCalledWith(block, 'images', Blockly.Python.ORDER_ATOMIC);
+            expect(Blockly.Python.valueToCode).toHaveBeenCalledWith(block, 'images', Blockly.Python.ORDER_MEMBER);
             expect(block.getFieldValue).toHaveBeenCalledWith('delay');
             expect(block.getFieldValue).toHaveBeenCalledWith('wait');
             expect(block.getFieldValue).toHaveBeenCalledWith('loop');
