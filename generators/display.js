@@ -32,7 +32,7 @@ Blockly.Python['microbit_display_clear'] = function(block) {
 
 Blockly.Python['microbit_display_show_image'] = function(block) {
   Blockly.Python.definitions_['import_microbit'] = 'from microbit import *';
-  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_ATOMIC);
+  var value_image = Blockly.Python.valueToCode(block, 'image', Blockly.Python.ORDER_MEMBER);
   var code = 'display.show(' + value_image + ')\n';
   return code;
 };

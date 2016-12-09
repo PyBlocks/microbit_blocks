@@ -194,7 +194,7 @@ describe("Blockly code generation for MicroPython on the BBC micro:bit:", functi
             var expected = 'display.show(Image.HEART)\n';
             expect(result).toEqual(expected);
             expect(Blockly.Python.definitions_.import_microbit).toEqual(import_microbit);
-            expect(Blockly.Python.valueToCode).toHaveBeenCalledWith(block, 'image', Blockly.Python.ORDER_ATOMIC);
+            expect(Blockly.Python.valueToCode).toHaveBeenCalledWith(block, 'image', Blockly.Python.ORDER_MEMBER);
         });
 
         it("should return valid Python for the show_animation block", function() {
