@@ -269,7 +269,10 @@
       ]
     }
   ],
-  "output": "microbit_image",
+  "output": [
+    "microbit_image",
+    "Array"
+  ],
   "colour": 300,
   "tooltip": "Specify one of the built-in images.",
   "helpUrl": "https://microbit-micropython.readthedocs.io/en/latest/image.html#attributes"

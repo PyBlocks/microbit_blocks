@@ -73,7 +73,7 @@
 },
 {
   "type": "microbit_display_show_animation",
-  "message0": "Animate images %1 with a delay of %2 milliseconds between frames. %3 Wait %4 %5 Loop %6 %7 Clear %8",
+  "message0": "Animate images %1 with a frame delay of %2 ms. %3 Wait %4 %5 Loop %6 %7 Clear %8",
   "args0": [
     {
       "type": "input_value",
