@@ -53,7 +53,54 @@ EGGSMELL_CATEGORY = Template("""  <category name="$name" colour="$colour">
 $blocks  </category>
 """)
 
-EGGSMELL_BLOCK = Template("""    <block type="$name"></block>\n""")
+EGGSMELL_BLOCK = Template("""    <block type="$name">$shadows</block>\n""")
+
+EGGSMELL_SHADOWS = Template('<value name="$shadow_name">'
+                            '<shadow type="$shadow_type">'
+                            '<field name="$shadow_item_name">'
+                            '$shadow_value'
+                            '</field>'
+                            '</shadow>'
+                            '</value>')
+
+SHADOW_SPECS = {
+    'Number': {
+        'type': 'math_number',
+        'name': 'NUM',
+        'value': '0',
+    },
+    'String': {
+        'type': 'text',
+        'name': 'TEXT',
+        'value': 'Some text',
+    },
+}
+
+SHADOW_OVERRIDES = {
+    'microbit_display_set_pixel': {
+        'value': '9',
+    },
+    'microbit_display_scroll': {
+        'message': 'Hello, World!',
+    },
+    'microbit_microbit_sleep': {
+        'duration': '1000',
+    },
+    'microbit_music_set_tempo': {
+        'ticks': '4',
+        'bpm': '120',
+    },
+    'microbit_speech_say': {
+        'english': 'Exterminate!',
+    },
+    'microbit_speech_pronounce': {
+        'phonemes': '/HEH5EH4EH3EH2EH2EH3EH4EH5EHLP.',
+    },
+    'microbit_speech_sing': {
+        'song': '#115DOWWWW',
+    }
+}
+
 
 LANGUAGE_HEAD = Template("""'use strict';
 
@@ -112,10 +159,28 @@ def get_eggsmell(categories):
         rendered_defs = []
         for definition in category['definitions']:
             name = definition['type']
-            rendered_defs.append(EGGSMELL_BLOCK.substitute(name=name))
+            shadows = ''
+            for arg in definition.get('args0', []):
+                if arg['type'] == 'input_value' and \
+                arg['check'] in SHADOW_SPECS:
+                    spec = SHADOW_SPECS[arg['check']]
+                    s_name = arg['name']
+                    s_type = spec['type']
+                    s_item_name = spec['name']
+                    s_val = spec['value']
+                    if name in SHADOW_OVERRIDES:
+                        if s_name in SHADOW_OVERRIDES[name]:
+                            s_val = SHADOW_OVERRIDES[name][s_name]
+                    shadows += EGGSMELL_SHADOWS.substitute(shadow_name=s_name,
+                                                           shadow_type=s_type,
+                                                           shadow_item_name=s_item_name,
+                                                           shadow_value=s_val)
+            rendered_defs.append(EGGSMELL_BLOCK.substitute(name=name,
+                                                           shadows=shadows))
+        blocks = ''.join(rendered_defs)
         rendered.append(EGGSMELL_CATEGORY.substitute(name=category['name'],
                                                      colour=category['colour'],
-                                                     blocks=''.join(rendered_defs)))
+                                                     blocks=blocks))
     return EGGSMELL.substitute(category=''.join(rendered))
 
 
