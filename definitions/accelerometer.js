@@ -152,7 +152,7 @@
 },
 {
   "type": "microbit_accelerometer_current_gesture",
-  "message0": "Curent gesture",
+  "message0": "Current gesture",
   "output": "String",
   "colour": 20,
   "tooltip": "Return the name of the current gesture.",
