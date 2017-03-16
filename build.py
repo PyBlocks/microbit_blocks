@@ -29,8 +29,8 @@ goog.provide('Blockly.Blocks.colour');
 goog.require('Blockly.Blocks');
 goog.require('Blockly.constants');
 
-Blockly.FieldColour.COLOURS = ['#000', '#400', '#600', '#800', '#a00', '#b00',
-                               '#c00', '#d00', '#e00', '#f00'];
+Blockly.FieldColour.COLOURS = ['#f00', '#e00', '#d00', '#c00', '#b00', '#a00',
+                               '#800', '#600', '#400', '#000'];
 Blockly.FieldColour.COLUMNS = 5;
 
 
